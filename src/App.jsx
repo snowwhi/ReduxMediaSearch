@@ -1,17 +1,22 @@
 import React from 'react'
 import {fetchPhotos,fetchVideos,fetchGIF,fetchLorem} from '../src/ApiMediaSearch/mediaApi'
+import Nav from './Components/Nav/Nav'
+import { Route, Routes } from 'react-router'
 
 const App = () => {
  
   return (
+
     <>
     <div className='min-h-screen w-full bg-slate-950'>
+      <Nav/>
+    <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/collection' element={<CollectionPage />} />
+      </Routes>
 
-    <button className='bg-green-400 p-3 m-2 hover:scale-95 rounded-2xl text-white font-bold' onClick={fetchPhotos} >Get photo</button>
-    <button className='bg-green-400 p-3 m-2 hover:scale-95 rounded-2xl text-white font-bold' onClick={fetchVideos}>Get vedios</button>
-    <button  className='bg-green-400 p-3 m-2 hover:scale-95 rounded-2xl text-white font-bold'onClick={fetchGIF} > Get  gif</button>
-    <button  className='bg-green-400 p-3 m-2 hover:scale-95 rounded-2xl text-white font-bold'onClick={fetchLorem} > Troubleshooting</button>
-    </div>
+      <ToastContainer />
+      </div>
     </>
   )
 }

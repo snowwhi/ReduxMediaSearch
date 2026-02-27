@@ -47,3 +47,10 @@ Slice1 Search
   same goes to our store no Two Collection
 
 ```````````
+Step3 
+````````````
+MAking a navBar 
+yani Routing
+
+`````````````
+
