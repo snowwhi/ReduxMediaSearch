@@ -1,8 +1,8 @@
 import {createSlice} from '@reduxjs/toolkit'
-import { toast, Zoom } from 'react-toastify';
+import { toast, Bounce } from 'react-toastify';
 const Collection=createSlice({
       name:'Collection',
-      initialValue:{
+      initialState:{
          items: JSON.parse(localStorage.getItem('collection')) || []
       },
       reducers:{
@@ -16,11 +16,11 @@ const Collection=createSlice({
             }
         },
         
-        removeCollection:()=>{
+        removeCollection:(state,actions)=>{
              console.log('removed');
             
             state.items = state.items.filter(
-                item => item.id !== action.payload
+                item => item.id !== actions.payload
             )
             console.log(state.items);
             
@@ -59,5 +59,5 @@ const Collection=createSlice({
       }
 
 })
-export const {addCollection,removeCollection,clearCollection,addedToast,removeToast} =Collection.action
-export default Collection.reducers
+export const {addCollection,removeCollection,clearCollection,addedToast,removeToast} =Collection.actions
+export default Collection.reducer

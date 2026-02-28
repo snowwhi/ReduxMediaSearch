@@ -31,4 +31,4 @@ export const Search =createSlice(
     }
 )
 export const { Query,setLoading,setError,ActiveTab,setResults,clearResults} = Search.actions
-export default Search.reducers
+export default Search.reducer

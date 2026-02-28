@@ -1,7 +1,9 @@
 import React from 'react'
-import {fetchPhotos,fetchVideos,fetchGIF,fetchLorem} from '../src/ApiMediaSearch/mediaApi'
+ import HomePage from './Components/HomePage/HomePage'
+  import CollectionPage from './Components/CollectionPage/CollectionPage'
 import Nav from './Components/Nav/Nav'
 import { Route, Routes } from 'react-router'
+import { ToastContainer } from 'react-toastify'
 
 const App = () => {
  

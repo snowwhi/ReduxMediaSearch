@@ -51,6 +51,13 @@ Step3
 ````````````
 MAking a navBar 
 yani Routing
-
+let me tell about the mess first reducers.actions not action than its initialState not 
+initialValue
+Few bugs related to import was resolved
+also react-redux is one thing and redux/toolkit is another so two npms  
 `````````````
-
+Step4
+``````````````
+Critical part is done Routing done redux done
+Only ui is remained 
+``````````````
