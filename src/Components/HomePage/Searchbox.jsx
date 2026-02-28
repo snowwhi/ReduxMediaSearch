@@ -15,7 +15,7 @@ const Searchbox = () => {
   };
 
   return (
-    <div className='w-full h-auto px-4 py-1'> 
+    <div className='w-full h-auto px-4 py-4'> 
       <form onSubmit={handleSubmit}
       id='Form'>
         <input

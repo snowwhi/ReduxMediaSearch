@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 const Nav = () => {
   return (
     
-      <ul className='bg-gray-700 text-white flex justify-center gap-10 items-center py-5 text-xl font-bold'>
+      <ul className='bg-gray-700 text-white flex justify-center gap-10 items-center py-3 text-xl font-bold'>
         <li>
           <Link to='/'>Home </Link></li>
         <li>
