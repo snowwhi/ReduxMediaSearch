@@ -11,7 +11,6 @@ const Searchbox = () => {
     console.log(text)
     if (text.trim()) {
       dispatch(setQuery(text));
-      setText('');
     }
   };
 

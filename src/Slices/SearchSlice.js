@@ -10,9 +10,9 @@ export const Search =createSlice(
              error: null
         },
         reducers:{
-            setQuery:(action,state)=>{
-                state.query=action.payloads},
-            setLoading:(action,state)=>{
+            setQuery:(state,action)=>{
+                state.query=action.payload},
+            setLoading:(state,action)=>{
                  state.loading=true
                  state.error = null
             },
@@ -22,8 +22,8 @@ export const Search =createSlice(
             },
             setActiveTab:(state,action)=>{
                 state.activeTab=action.payload},
-            setResults:(actions,state)=>{
-                state.results=actions.payload
+            setResults:(state,action)=>{
+                state.results=action.payload
                 state.loading = false
             },
             clearResults:(state)=>{state.results=[]}

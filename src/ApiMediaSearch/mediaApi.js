@@ -31,13 +31,6 @@ export async function fetchGIF(query,limit=20) {
   const res = await axios.get('https://tenor.googleapis.com/v2/search',{
     params:{q:query,key:TENOR_KEY,limit},
   })
-  console.log(res)
-  return res
-}
-
-export async function fetchLorem() {
-  const res = await axios.get('https://api.github.com/users')
-  console.log('i am being clicked')
-  console.log(res)
-  return res
+ console.log("Tenor Raw:", res.data);
+  return res.data
 }

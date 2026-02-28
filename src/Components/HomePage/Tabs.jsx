@@ -15,7 +15,6 @@ import {setActiveTab} from '../../Slices/SearchSlice'
             <button className={`${(activeTab===elem?'bg-blue-700':'bg-gray-700')} cursor-pointer  text-white font-bold px-3 py-1 rounded-2xl`}
             type="button"
             onClick={() => {
-            console.log(`i am being clicked: ${elem}`);
             dispatch(setActiveTab(elem));
       }}
             key={idx} >

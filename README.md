@@ -63,4 +63,15 @@ Only ui is remained
 So i was making search box of my home page where i encontour classic name mismatch error use typescript to avoid this stuff
 bhai shab kiya bug tha (state ,action) not (action,state)
 and action not actions
+ rembember how and from where the storeinitial value comes
+
+ const {query,activeTab,results,loading,error}=useSelector((state)=>(state.Search))
+ 
+
+``````````````
+Step5
+``````````````
+At the very end what was your error that state and action 2nd typos payloads 
+please ankhyen khol kr
+
 ``````````````
