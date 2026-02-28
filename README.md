@@ -60,4 +60,7 @@ Step4
 ``````````````
 Critical part is done Routing done redux done
 Only ui is remained 
+So i was making search box of my home page where i encontour classic name mismatch error use typescript to avoid this stuff
+bhai shab kiya bug tha (state ,action) not (action,state)
+and action not actions
 ``````````````

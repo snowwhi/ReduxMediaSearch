@@ -4,15 +4,15 @@ export const Search =createSlice(
         name:'Search',
         initialState:{
              query: '',
-             activeTab: 'photos',
+             activeTab: 'Photo',
              results: [],
              loading: false,
              error: null
         },
         reducers:{
-            setQuery:(actions,state)=>{
-                state.query=actions.payloads},
-            setLoading:(actions,state)=>{
+            setQuery:(action,state)=>{
+                state.query=action.payloads},
+            setLoading:(action,state)=>{
                  state.loading=true
                  state.error = null
             },
@@ -20,8 +20,8 @@ export const Search =createSlice(
                 state.error=actions.payload
                 state.loading=false
             },
-            setActiveTab:(actions,state)=>{
-                state.activeTab=actions.payload},
+            setActiveTab:(state,action)=>{
+                state.activeTab=action.payload},
             setResults:(actions,state)=>{
                 state.results=actions.payload
                 state.loading = false
@@ -30,5 +30,5 @@ export const Search =createSlice(
         }
     }
 )
-export const { Query,setLoading,setError,ActiveTab,setResults,clearResults} = Search.actions
+export const {setQuery,setLoading,setError,setActiveTab,setResults,clearResults} = Search.actions
 export default Search.reducer

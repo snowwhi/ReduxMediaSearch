@@ -1,8 +1,12 @@
-import React from 'react'
 
+import Searchbox from './Searchbox'
+import Tabs from './Tabs'
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div className=' w-full min-h-screen'>
+    <Searchbox/>
+     <Tabs/>
+    </div>
   )
 }
 
