@@ -8,7 +8,6 @@ const HomePage = () => {
     <div className=' w-full min-h-screen'>
     <Searchbox/>
      <Tabs/>
-    <Tester/>
     <ResultGrid/>
     </div>
   )

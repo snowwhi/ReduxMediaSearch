@@ -16,13 +16,13 @@ const Collection=createSlice({
             }
         },
         
-        removeCollection:(state,actions)=>{
-             console.log('removed');
+        removeCollection:(state,action)=>{
+         
             
             state.items = state.items.filter(
-                item => item.id !== actions.payload
+                item => item.id !== action.payload
             )
-            console.log(state.items);
+        
             
             localStorage.setItem('collection', JSON.stringify(state.items))
         },
