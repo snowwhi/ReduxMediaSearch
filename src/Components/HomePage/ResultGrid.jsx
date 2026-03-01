@@ -44,8 +44,7 @@ const ResultGrid = () => {
                 }
                 if (activeTab == 'Gif') {
                     let response = await fetchGIF(query)
-                       console.log("Raw API Response:", response);  
-                    data = response.data.results.map((item) => ({
+                    data = response.results.map((item) => ({
                         id: item.id,
                         title: item.title || 'GIF',
                         type: 'gif',

@@ -75,3 +75,8 @@ At the very end what was your error that state and action 2nd typos payloads
 please ankhyen khol kr
 
 ``````````````
+Step 6 Tenor api funda
+`````````````````
+Guess what why it was not not working in normalization of api tenor api was not mapped correctlty
+dispute resolved in sec of second day ~
+`````````````````

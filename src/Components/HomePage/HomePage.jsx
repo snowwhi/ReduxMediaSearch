@@ -9,6 +9,7 @@ const HomePage = () => {
     <Searchbox/>
      <Tabs/>
     <Tester/>
+    <ResultGrid/>
     </div>
   )
 }
